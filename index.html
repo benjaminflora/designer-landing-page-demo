@@ -11,22 +11,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <style>
       :root {
-        --bg: #f7f3ee;
+        --bg: #eef5ee;
         --panel: #fffdf9;
-        --ink: #171614;
-        --muted: #645f5a;
-        --line: rgba(23, 22, 20, 0.1);
-        --peach: #f6c7a7;
-        --tea: #dfead8;
-        --sky: #dceaf9;
-        --blush: #f7dfe3;
-        --gold: #f4d78c;
-        --accent: #eb6f51;
+        --ink: #173128;
+        --muted: #4f6259;
+        --line: rgba(23, 49, 40, 0.1);
+        --sage: #dfeee4;
+        --mint: #d9f1de;
+        --cream: #f2f3ea;
+        --blush: #e5f0e8;
+        --gold: #dfecc5;
+        --accent: #2b7a4b;
+        --accent-strong: #1e5d3d;
+        --accent-soft: #dff2e4;
       }
 
       * { box-sizing: border-box; }
@@ -35,7 +37,7 @@
 
       body {
         margin: 0;
-        font-family: "Manrope", sans-serif;
+        font-family: "Montserrat", sans-serif;
         background: var(--bg);
         color: var(--ink);
       }
@@ -57,7 +59,7 @@
         top: 0;
         z-index: 10;
         backdrop-filter: blur(10px);
-        background: rgba(247, 243, 238, 0.8);
+        background: rgba(238, 245, 238, 0.8);
         border-bottom: 1px solid var(--line);
       }
 
@@ -72,16 +74,16 @@
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        font-weight: 800;
-        letter-spacing: -0.08em;
+        font-weight: 500;
+        letter-spacing: -0.06em;
         font-size: 1.4rem;
       }
 
       .brand-mark {
         width: 30px;
         height: 30px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, var(--accent), var(--gold));
+        border-radius: 0;
+        background: linear-gradient(135deg, var(--accent), var(--mint));
         display: grid;
         place-items: center;
         color: white;
@@ -98,10 +100,10 @@
 
       .nav a:last-child {
         padding: 10px 16px;
-        border-radius: 999px;
+        border-radius: 0;
         background: var(--ink);
         color: white;
-        font-weight: 700;
+        font-weight: 500;
       }
 
       .hero {
@@ -121,18 +123,16 @@
         gap: 8px;
         padding: 8px 12px;
         border: 1px solid var(--line);
-        border-radius: 999px;
+        border-radius: 0;
         background: rgba(255, 255, 255, 0.4);
         font-size: 0.75rem;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
         color: var(--muted);
       }
 
       .eyebrow .dot {
         width: 8px;
         height: 8px;
-        border-radius: 50%;
+        border-radius: 0;
         background: var(--accent);
       }
 
@@ -141,6 +141,7 @@
         font-size: clamp(3.3rem, 6vw, 6.2rem);
         line-height: 0.96;
         letter-spacing: -0.07em;
+        font-weight: 500;
       }
 
       h1 .highlight {
@@ -167,13 +168,13 @@
         align-items: center;
         justify-content: center;
         padding: 15px 22px;
-        border-radius: 999px;
-        font-weight: 800;
+        border-radius: 0;
+        font-weight: 500;
         font-size: 0.92rem;
       }
 
       .button.primary {
-        background: var(--ink);
+        background: var(--accent);
         color: white;
       }
 
@@ -199,10 +200,10 @@
       .avatar {
         width: 34px;
         height: 34px;
-        border-radius: 50%;
+        border-radius: 0;
         margin-left: -8px;
         border: 2px solid var(--bg);
-        background: linear-gradient(135deg, #d7e3ff, #f9d7c8);
+        background: linear-gradient(135deg, #d7e3ff, #dfeee4);
       }
 
       .avatar:first-child { margin-left: 0; }
@@ -210,21 +211,21 @@
       .artboard {
         position: relative;
         min-height: 580px;
-        background: linear-gradient(135deg, #e7f1ff 0%, #fcefe6 100%);
-        border: 1px solid rgba(23, 22, 20, 0.08);
-        border-radius: 34px;
+        background: linear-gradient(135deg, #edf6f0 0%, #eef4eb 100%);
+        border: 1px solid rgba(23, 49, 40, 0.08);
+        border-radius: 0;
         overflow: hidden;
       }
 
       .shape {
         position: absolute;
-        border-radius: 30px;
+        border-radius: 0;
       }
 
       .shape.one {
         width: 230px;
         height: 230px;
-        background: var(--gold);
+        background: var(--accent-soft);
         right: 52px;
         top: 50px;
         transform: rotate(16deg);
@@ -233,10 +234,10 @@
       .shape.two {
         width: 310px;
         height: 260px;
-        background: var(--peach);
+        background: var(--sage);
         left: 56px;
         bottom: 60px;
-        border-radius: 40% 60% 35% 65%;
+        border-radius: 0;
       }
 
       .shape.three {
@@ -245,15 +246,15 @@
         background: rgba(255,255,255,0.72);
         right: 86px;
         bottom: 88px;
-        border-radius: 50%;
+        border-radius: 0;
       }
 
       .card {
         position: absolute;
-        border-radius: 24px;
+        border-radius: 0;
         background: rgba(255, 255, 255, 0.82);
-        border: 1px solid rgba(23,22,20,0.08);
-        box-shadow: 0 20px 50px rgba(34, 30, 24, 0.08);
+        border: 1px solid rgba(23,49,40,0.08);
+        box-shadow: 0 20px 50px rgba(25, 61, 45, 0.08);
       }
 
       .card.large {
@@ -274,12 +275,12 @@
 
       .mini {
         height: 78px;
-        background: linear-gradient(135deg, var(--sky), var(--tea));
-        border-radius: 16px;
+        background: linear-gradient(135deg, var(--mint), var(--sage));
+        border-radius: 0;
       }
 
-      .mini:nth-child(2) { background: linear-gradient(135deg, var(--blush), #fbf2e7); }
-      .mini:nth-child(3) { background: linear-gradient(135deg, #dfe9d8, #fff3d6); }
+      .mini:nth-child(2) { background: linear-gradient(135deg, var(--blush), #edf5ef); }
+      .mini:nth-child(3) { background: linear-gradient(135deg, #eaf3df, #eff6e8); }
 
       .stats {
         display: flex;
@@ -298,16 +299,16 @@
         gap: 8px;
         background: rgba(255,255,255,0.8);
         padding: 10px 12px;
-        border-radius: 999px;
-        border: 1px solid rgba(23,22,20,0.08);
-        font-weight: 700;
+        border-radius: 0;
+        border: 1px solid rgba(23,49,40,0.08);
+        font-weight: 500;
       }
 
       .pill .dot {
         width: 8px;
         height: 8px;
-        border-radius: 50%;
-        background: #66ba66;
+        border-radius: 0;
+        background: #55b06c;
       }
 
       .metric {
@@ -316,7 +317,7 @@
         bottom: 24px;
         background: var(--ink);
         color: white;
-        border-radius: 18px;
+        border-radius: 0;
         padding: 14px 18px;
         min-width: 170px;
       }
@@ -325,6 +326,7 @@
         display: block;
         font-size: 2rem;
         letter-spacing: -0.08em;
+        font-weight: 500;
       }
 
       .metric span {
@@ -343,10 +345,8 @@
         grid-template-columns: repeat(6, minmax(0, 1fr));
         gap: 18px;
         align-items: center;
-        color: rgba(23,22,20,0.5);
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
+        color: rgba(23,49,40,0.62);
+        font-weight: 500;
         text-align: center;
         font-size: 0.8rem;
       }
@@ -385,7 +385,7 @@
       .feature {
         background: rgba(255,255,255,0.55);
         border: 1px solid var(--line);
-        border-radius: 26px;
+        border-radius: 0;
         padding: 24px;
       }
 
@@ -394,9 +394,9 @@
         height: 52px;
         display: grid;
         place-items: center;
-        border-radius: 16px;
+        border-radius: 0;
         font-size: 1.5rem;
-        background: linear-gradient(135deg, #f8e5d5, #ebf3ff);
+        background: linear-gradient(135deg, #e5f4e8, #ebf3ff);
         margin-bottom: 18px;
       }
 
@@ -404,6 +404,7 @@
         margin: 0 0 12px;
         font-size: 1.45rem;
         letter-spacing: -0.05em;
+        font-weight: 500;
       }
 
       .feature p {
@@ -422,8 +423,8 @@
         justify-content: space-between;
         gap: 20px;
         padding: 28px 30px;
-        border-radius: 26px;
-        background: linear-gradient(135deg, #1f1d1b, #2d2c2a);
+        border-radius: 0;
+        background: linear-gradient(135deg, var(--accent-strong), var(--accent));
         color: white;
       }
 
@@ -431,11 +432,12 @@
         margin: 0 0 8px;
         font-size: clamp(2rem, 3vw, 3rem);
         letter-spacing: -0.08em;
+        font-weight: 500;
       }
 
       .cta-box p {
         margin: 0;
-        color: rgba(255,255,255,0.7);
+        color: rgba(255,255,255,0.75);
       }
 
       @media (max-width: 900px) {
@@ -532,8 +534,8 @@
             <div class="shape three"></div>
 
             <div class="card large">
-              <div style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);">Campaign snapshot</div>
-              <div style="margin-top: 16px; font-size: 2.2rem; letter-spacing: -0.08em; font-weight: 800;">+182%</div>
+              <div style="font-size: 0.75rem; color: var(--muted);">Campaign snapshot</div>
+              <div style="margin-top: 16px; font-size: 2.2rem; letter-spacing: -0.08em; font-weight: 500;">+182%</div>
               <div style="color: var(--muted); margin-top: 10px;">Qualified pipeline growth in 9 weeks.</div>
 
               <div class="mock-grid">
