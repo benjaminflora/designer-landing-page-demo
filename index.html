@@ -412,6 +412,27 @@
         line-height: 1.7;
       }
 
+      .feature-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 18px;
+        background: rgba(255,255,255,0.8);
+        padding: 10px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(23,22,20,0.08);
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+
+      .feature-pill .dot {
+        width: 8px;
+        height: 8px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #66ba66;
+      }
+
       .cta {
         padding: 18px 0 80px;
       }
@@ -600,6 +621,7 @@
               <p>
                 High-converting websites, campaign assets, and storytelling systems that create momentum.
               </p>
+              <div class="feature-pill"><span class="dot"></span>We help people get good at League of Legends</div>
             </article>
           </div>
         </div>
